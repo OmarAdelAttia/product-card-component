@@ -42,55 +42,67 @@ body {
 .product_card__data {
     width: 50%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     border-radius: 0px 10px 10px 0px;
 }
 
 .product {
-    margin: 25px 40px 10px;
+    margin: 0px 40px ;
     font-size: .8rem;
     color: hsl(228, 12%, 48%);
 }
 
 .product_name {
-    margin: 10px 40px;
+    margin: 0px 40px;
     font-size: 2.1rem;
+    line-height: 30px;
     font-family: 'Fraunces', serif;
 }
 
 .product_details {
+    margin: 0px 40px;
     font-size: .9rem;
-    margin: 10px 40px;
+    line-height: 10ox;
     color: hsl(228, 12%, 48%);
 }
 
 .product_price {
+    display: flex;
     font-size: 2rem;
-    margin: 10px 40px;
+    margin: 0px 40px;
     font-family: 'Fraunces', serif;
 }
 
-.product_price .old_price {
+.new_price {
+    color: hsl(158, 36%, 37%);
+}
+
+.old_price {
     font-size: .9rem;
-    padding-left: 20px;
-    color: hsl(228, 12%, 48%);
     font-weight: 500;
+    padding-top: 10px;
+    color: hsl(228, 12%, 48%);
     text-decoration: line-through;
     font-family: 'Montserrat', sans-serif;
 }
 
 .btn {
     display: flex;
-    margin-top: 10px;
-    margin-bottom: 10px;
 }
 
 .cart_btn {
     margin: auto;
     color: white;
     cursor: pointer;
-    padding: 10px 25px;
+    padding: 15px 75px;
     border-radius: 10px;
     border-color: transparent;
     font-family: 'Montserrat', sans-serif;
     background-color: hsl(158, 36%, 37%);
+}
+
+.cart_btn:hover {
+    background-color: hsl(158, 100%, 20%);
 }
